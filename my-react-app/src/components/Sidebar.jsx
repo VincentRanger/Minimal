@@ -9,15 +9,18 @@ import { TbBrandBooking } from "react-icons/tb";
 import { FaFile } from "react-icons/fa";
 import { SiCoursera } from "react-icons/si";
 import pp from "../assets/pp.webp";
+import { useNavigate } from "react-router-dom";
 
 const menuItems = [
   {
     icon: <IoIosSpeedometer size={20} />,
     label: "App",
+    url:'/app'
   },
   {
     icon: <HiShoppingBag size={20} />,
     label: "Ecommerce",
+    url:'/ecommerce'
   },
   {
     icon: <SiGoogleanalytics size={20} />,
@@ -42,6 +45,7 @@ const menuItems = [
 ];
 
 const Sidebar = ({ open, setOpen }) => {
+  const navigate=useNavigate()
   return (
     <nav
       className={`shadow-md h-screen p-2 flex flex-col duration-500 ${
@@ -62,7 +66,7 @@ const Sidebar = ({ open, setOpen }) => {
             key={i}
             className={`px-3 py-2 rounded-md text-gray-700 cursor-pointer duration-500 ${
               open ? "text-sm" : "text-xs"
-            } gap-2 items-center ${open ? "flex" : "block"}`}
+            } gap-2 items-center ${open ? "flex" : "block"}`} onClick={()=> navigate(items.url)}
           >
             <div className="justify-self-center ">{items.icon}</div>
             <p className="justify-self-center ">{items.label}</p>

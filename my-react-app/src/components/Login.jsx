@@ -25,7 +25,7 @@ const Login = () => {
     if (Object.keys(errors).length === 0) {
       const user = users.find(u => u.email === email && u.password === password)
       if (user) {
-        navigate('/signin')
+        navigate('/dashboard')
       } else {
         setErrors({
           email: 'Email is not correct',
