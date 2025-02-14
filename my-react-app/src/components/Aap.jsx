@@ -2,6 +2,12 @@ import back from '../assets/asd.jpg'
 import stand from '../assets/stand.webp'
 import back2 from '../assets/back2.jpeg'
 import { FaAngleDoubleUp } from "react-icons/fa";
+import m from '../assets/m.webp'
+import o from '../assets/o.webp'
+import a from '../assets/a.webp'
+import j from '../assets/j.webp'
+import i from '../assets/i.webp'
+
 
 const Aap = () => {
   return (
@@ -38,7 +44,63 @@ const Aap = () => {
 <h1 className='font-bold text-3xl mb-3'>678</h1>
 <p className='flex'><FaAngleDoubleUp className='text-green-600 mt-1'/>+7.8% <span className='text-gray-500 ms-1'>last 7 days</span></p>
 </div>
-        </div>
+</div>
+<div className='mt-15 flex'>
+  <div>
+  <h1 className='font-medium text-lg mb-5'>New invoice</h1>
+  <table className='text-center'>
+    <thead className='text-gray-500'>
+    <tr>
+      <th className='px-10 py-3'>Invoice ID</th>
+      <th className='px-10 py-3'>Category</th>
+      <th className='px-10 py-3'>Price</th>
+      <th className='px-10 py-3'>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td className='py-5'>INV-1990</td>
+      <td>Android</td>
+      <td>$83.74</td>
+      <td>Paid</td>
+    </tr>
+    <tr>
+      <td className='py-5'>INV-1991</td>
+      <td>Mac</td>
+      <td>$97.14</td>
+      <td>Out of date</td>
+    </tr>
+    <tr>
+      <td className='py-5'>INV-1992</td>
+      <td>Windows</td>
+      <td>$68.71</td>
+      <td>Progress</td>
+    </tr>
+    <tr>
+      <td className='py-5'>INV-1993</td>
+      <td>Android</td>
+      <td>$85.21</td>
+      <td>Paid</td>
+    </tr>
+    <tr>
+      <td className='py-5'>INV-1994</td>
+      <td>Mac</td>
+      <td>$52.17</td>
+      <td>Paid</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <div>
+  <h1 className='font-medium text-lg mb-5'>Related applications</h1>
+    <div >
+      <img src={m} className='w-8'/>
+      <div>
+
+      </div>
+    </div>
+  </div>
+</div>
     </div>
   )
 }
