@@ -1,35 +1,42 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
 import Back from "../assets/asd.jpeg"
+import users from '../data/constant'
 
 const Login = () => {
+
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
   const [errors, setErrors]= useState('')
  
   const navigate=useNavigate()
-  const users=[{
-    email:'em@gmail.com',
-    password:'12345678'
-  },
-{
-  email:'tm@gmail.com',
-  password: '87654321'
-}]
-
   const handleSubmit=(event)=>{
     event.preventDefault()
     const errors= validate()
     setErrors(errors)
 
     if (Object.keys(errors).length === 0) {
-      const user = users.find(u => u.email === email && u.password === password)
+      const user = users.find((u) => u.email === email && u.password === password)
       if (user) {
-        navigate('/dashboard')
+        localStorage.setItem("userRole", user.role)
+        localStorage.setItem("userName", user.name)
+        localStorage.setItem("userEmail", user.email)
+
+        if (user.role === 'Admin') {
+          navigate("/dashboard/app")
+        } else if (user.role === 'Hr') {
+          navigate("/dashboard/analytic")
+        } else if (user.role === 'Finance') {
+          navigate("/dashboard/ecommerce")
+        } else if (user.role === 'Developer') {
+          navigate("/dashboard/banking")
+        } else {
+          navigate("/dashboard")
+        }
       } else {
         setErrors({
-          email: 'Email is not correct',
-          password: 'Password is not correct'
+          email: "Email is not correct",
+          password: "Password is not correct",
         })
       }
     }
