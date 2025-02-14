@@ -49,7 +49,7 @@ const Doublechart = () => {
     },
 ]
   return (
-   <BarChart width={600} height={300} data={data}>
+   <BarChart width={750} height={300} data={data}>
 <XAxis dataKey={"name"}/>
 <YAxis/>
 <Legend/>

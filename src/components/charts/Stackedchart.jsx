@@ -77,7 +77,7 @@ const Stackedchart = () => {
         },
     ]
   return (
-        <BarChart data={data} width={650} height={350} >
+        <BarChart data={data} width={750} height={350} >
             <XAxis dataKey="name"/>
             <YAxis/>
             <Tooltip/>

@@ -46,7 +46,7 @@ const Ecommerce = () => {
     )
   }
     return (
-      <div className="mt-20 mx-2">
+      <div className="mt-20 mx-5">
         <div className="gap-9 grid grid-cols-3 ">
           <div
             className="bg-cover col-span-2 h-70 rounded-2xl py-10 px-10 flex justify-between"
@@ -132,7 +132,7 @@ const Ecommerce = () => {
   </div>
 </div>
       
-<div className="grid grid-cols-3 mt-5">
+<div className="grid grid-cols-3 gap-10 mt-5">
   <div className="col-span-2 me-10">
   <div>
   <h1 className="font-semibold text-lg mb-6">Sales  overview</h1>
@@ -140,7 +140,7 @@ const Ecommerce = () => {
  <div className="flex justify-between mb-5">
   <div>
   <h1 className="font-semibold text-sm mb-2">Total Profit</h1>
-  <ProgressBar completed={20} width={300} height="10px" bgColor="#82ca9d" isLabelVisible={false}/>
+  <ProgressBar completed={20} width={550} height="10px" bgColor="#82ca9d" isLabelVisible={false}/>
   </div>
 <div>
   <h1 className="font-bold">$8,374<span className="ms-2 text-gray-400">10.1%</span></h1>
@@ -149,7 +149,7 @@ const Ecommerce = () => {
  <div className="flex justify-between mb-5">
   <div>
   <h1 className="font-semibold text-sm mb-2">Total Profit</h1>
-  <ProgressBar completed={30} width={300} height="10px" bgColor="#89CFF0 " isLabelVisible={false}/>
+  <ProgressBar completed={30} width={550} height="10px" bgColor="#89CFF0 " isLabelVisible={false}/>
   </div>
 <div>
   <h1 className="font-bold">$9,714<span className="ms-2 text-gray-400">13.6%</span></h1>
@@ -158,14 +158,14 @@ const Ecommerce = () => {
  <div className="flex justify-between">
   <div>
   <h1 className="font-semibold text-sm mb-2">Total Profit</h1>
-  <ProgressBar completed={40} width={300} height="10px" bgColor="#FFC300" isLabelVisible={false}/>
+  <ProgressBar completed={40} width={550} height="10px" bgColor="#FFC300" isLabelVisible={false}/>
   </div>
 <div>
   <h1 className="font-bold">$6,871<span className="ms-2 text-gray-400">28.2%</span></h1>
 </div>
  </div>
  </div>
-<div className="col-span-1 me-10">
+<div className="col-span-1 ms-10 justify-end">
   <h1 className="font-semibold mb-3">Current balance</h1>
   <h1 className="font-bold text-4xl">$187,650</h1>
   <div className="flex justify-between mt-3 font-sm"><h1 className="text-gray-500">Order total</h1><p>$287,650</p></div>
@@ -178,10 +178,10 @@ const Ecommerce = () => {
 </div>
 </div>
 
-        <div className="mt-15 grid grid-cols-3">
-          <div className="col-span-2">
+        <div className="mt-15 grid grid-cols-4">
+          <div className="col-span-3">
             <h1 className="font-medium text-lg mb-5">Best salesman</h1>
-            <table className="text-center">
+            <table className="text-center w-200">
               <thead className="text-gray-500">
                 <tr>
                   <th className="px-10 py-3">Seller</th>

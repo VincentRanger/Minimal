@@ -7,9 +7,9 @@ import { Outlet } from 'react-router-dom'
 
 
 const Dashboard = () => {
-  const [open,setOpen]=useState(true)
+  const [open,setOpen]=useState(false)
   return (
-    <div className='flex mx-3'>
+    <div className='flex'>
      <Sidebar open={open} setOpen={setOpen}/>
      <Navbar open={open} />
    <div className={`${!open ? 'w-[100%]': 'w-[80%]'} ${!open ? 'ms-37':'ms-75'}`}>

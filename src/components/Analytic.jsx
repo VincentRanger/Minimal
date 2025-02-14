@@ -46,7 +46,7 @@ function Analytic() {
 
 
   return (
-    <div className='mt-20'>
+    <div className='mt-20 mx-5'>
       <h1 className='font-bold text-2xl'>Hi, Welcome back</h1>
       <div className='grid grid-cols-4 mt-8'>
 <div className='col-span-1 rounded-lg p-5 py-4 h-60 w-60 text-green-200 bg-cover' style={{ backgroundImage: `url(${back1})` }}>
@@ -91,8 +91,8 @@ function Analytic() {
 </div>
 </div>
 
-<div className='grid grid-cols-3 mt-5'>
-<div className='col-span-2'>
+<div className='grid grid-cols-4 mt-5'>
+<div className='col-span-3'>
   <h1 className='font-bold text-lg mb-5'>News</h1>
 <div className='flex items-center gap-3'>
 <img src={n1} className='w-12 h-12 rounded-lg'/>
@@ -205,7 +205,7 @@ function Analytic() {
   </div>
 </div>
 </div>
-<div className='col-span-2'>
+<div className='col-span-2 ms-37'>
 <h1 className='font-semibold text-lg mb-5'>Tasks</h1>
 <div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-80'>Prepare Monthly Financial Report</h1><CiMenuKebab /></div>
 <div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-80'>Design New Marketing Campaign</h1><CiMenuKebab /></div>

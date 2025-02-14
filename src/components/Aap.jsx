@@ -51,7 +51,7 @@ if(loading){
 }
 
   return (
-    <div className="mt-20 mx-2">
+    <div className="mt-20 mx-5">
       <div className="gap-9 grid grid-cols-3 ">
         <div
           className="bg-cover col-span-2 h-70 rounded-2xl py-10 px-10 flex justify-between"
@@ -129,7 +129,7 @@ if(loading){
         <p className="text-gray-500">Downloaded by operating system</p>
       <Piechart/>
       </div>
-<div className="col-span-2">
+<div className="col-span-2 ms-2">
   <div>
     <h1 className="font-bold text-lg mb-2">Area installed</h1>
     <p className="text-gray-500 mb-2">+43% than last year</p>
@@ -138,10 +138,10 @@ if(loading){
 </div>
      </div>
 
-      <div className="mt-15 grid grid-cols-3">
-        <div className="col-span-2">
+      <div className="mt-15 grid grid-cols-4">
+        <div className="col-span-3 ">
           <h1 className="font-medium text-lg mb-5">New invoice</h1>
-          <table className="text-center">
+          <table className="text-center w-200">
             <thead className="text-gray-500">
               <tr>
                 <th className="px-10 py-3">Invoice ID</th>
@@ -155,31 +155,31 @@ if(loading){
                 <td className="py-5">INV-1990</td>
                 <td>Android</td>
                 <td>$83.74</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-11 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1991</td>
                 <td>Mac</td>
                 <td>$97.14</td>
-                <td><p className="bg-red-200 text-red-700 font-bold w-25 ms-5 rounded-md">Out of date</p></td>
+                <td><p className="bg-red-200 text-red-700 font-bold w-25 ms-10 rounded-md">Out of date</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1992</td>
                 <td>Windows</td>
                 <td>$68.71</td>
-                <td><p className="bg-yellow-200 text-yellow-600 font-bold w-20 ms-7 rounded-md">Progress</p></td>
+                <td><p className="bg-yellow-200 text-yellow-600 font-bold w-20 ms-13 rounded-md">Progress</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1993</td>
                 <td>Android</td>
                 <td>$85.21</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-11 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1994</td>
                 <td>Mac</td>
                 <td>$52.17</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-11 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
               </tr>
             </tbody>
           </table>
@@ -192,7 +192,7 @@ if(loading){
                 <img src={m} className="w-8" />
               </div>
               <div className="flex ms-5">
-                <h1 className="font-medium me-2">Microsoft office 365</h1>
+                <a href="www.google.com" target="_blank" alt="_blank" className="font-medium me-2 hover:underline">Microsoft office 365</a>
                 <h1 className="font-bold text-gray-400">Free</h1>
               </div>
             </div>
@@ -211,7 +211,7 @@ if(loading){
                 <img src={i} className="w-8" />
               </div>
               <div className="flex ms-5">
-                <h1 className="font-medium me-2">Opera</h1>
+                <a href="www.google.com" target="_blank" alt="_blank" className="font-medium me-2 hover:underline">Opera</a>
                 <h1 className="font-bold text-gray-400">Free</h1>
               </div>
             </div>
@@ -219,7 +219,7 @@ if(loading){
               <FaDownload className="mt-1 me-1" />
               <p className="me-2">1.95k &#x2022;</p>
               <FaHardDrive className="mt-1 me-1" />
-              <p className="me-2">1.9mb &#x2022;</p>
+              <p className="me-2">1.9Mb &#x2022;</p>
               <FaStar className="mt-1 me-1" />
               <p>1.95k</p>
             </div>
@@ -230,7 +230,7 @@ if(loading){
                 <img src={o} className="w-8" />
               </div>
               <div className="flex ms-5">
-                <h1 className="font-medium me-2">Adobe acrobat reader DC</h1>
+                <a href="www.google.com" target="_blank" alt="_blank" className="font-medium me-2 hover:underline">Adobe acrobat reader DC</a>
                 <h1 className="font-bold text-gray-400">Free</h1>
               </div>
             </div>
@@ -249,7 +249,7 @@ if(loading){
                 <img src={a} className="w-8" />
               </div>
               <div className="flex ms-5">
-                <h1 className="font-medium me-2">Joplin</h1>
+                <a href="www.google.com" target="_blank" alt="_blank" className="font-medium me-2 hover:underline">Joplin</a>
                 <h1 className="font-bold text-gray-400">Free</h1>
               </div>
             </div>
@@ -268,7 +268,7 @@ if(loading){
                 <img src={j} className="w-8" />
               </div>
               <div className="flex ms-5">
-                <h1 className="font-medium me-2">Topaz photo AI</h1>
+                <a href="www.google.com" target="_blank" alt="_blank" className="font-medium me-2 hover:underline">Topaz photo AI</a>
                 <h1 className="font-bold text-gray-400">Free</h1>
               </div>
             </div>
@@ -382,7 +382,7 @@ if(loading){
           </div>
         </div>
 
-        <div className=" col-span-1">
+        <div className=" col-span-1 justify-items-end">
           <div className="bg-green-800 h-30 w-85 mb-5 rounded-2xl flex px-3 py-2 items-center">
             <h1 className="text-xl text-white font-medium ms-5">48%</h1>
             <div className="ms-10">
