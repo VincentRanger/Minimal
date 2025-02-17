@@ -59,10 +59,10 @@ const Login = () => {
     const error={}
 
     if(!email){
-      error.email="Email is Required"
+      error.email=""
     }
     if(!password){
-      error.password="Password is Required"
+      error.password=""
     }
     return error
   }

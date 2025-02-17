@@ -50,12 +50,6 @@ const Navbar = ({ open }) => {
 
   const menuItems = [
     {
-      icons: <FaSearch size={20} />,
-      feature: <div className='absolute top-3 left-140 bg-gray-100  rounded-md'>
-        <input type="text" placeholder='Search ...' className='text-gray-500 font-bold shadow-lg px-4 p-2' size={30} />
-      </div>
-    },
-    {
       icons: <LiaFlagUsaSolid size={20} />,
       feature: (
         <div className='absolute right-40 px-4 py-2 shadow-md mt-2 bg-white rounded-md'>
@@ -109,7 +103,7 @@ const Navbar = ({ open }) => {
         <h1 className='font-bold'>{userName}</h1>
         <h1 className='text-gray-500'>{userEmail}</h1>
         <div className='flex gap-3 mt-5'>
-          <img src={s1} alt="" className='rounded-full w-10' />
+            <img src={s1} alt="" className='rounded-full w-10' />
           <img src={s2} alt="" className='rounded-full w-10' />
           <img src={s3} alt="" className='rounded-full w-10' />
           <div className='w-10 bg-gray-200 justify-items-center rounded-full items-center'><FaPlus className='text-gray-500 mt-2' size={22} /></div>
@@ -136,7 +130,7 @@ const Navbar = ({ open }) => {
         {menuItems.map((items, i) => (
           <li key={i} className=''>
             <p className='text-gray-500 cursor-pointer' onClick={() => handleToggle(i)}>
-              {i === 1 ? <img src={selectedFlag} className='w-6 h-6' /> : items.icons}
+              {i === 0 ? <img src={selectedFlag} className='w-6 h-6' /> : items.icons}
             </p>
             {isOpen === i && (
               <div>{items.feature}</div>
