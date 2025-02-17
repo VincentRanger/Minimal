@@ -141,8 +141,8 @@ if(loading){
 </div>
      </div>
 
-      <div className="mt-15 grid grid-cols-4">
-        <div className="col-span-3 ">
+      <div className="mt-15 grid grid-cols-3">
+        <div className="col-span-2 ">
           <h1 className="font-medium text-lg mb-5">New invoice</h1>
           <table className={`text-center w-200 border ${open ? 'w-[75%]':'w-[90%]'}`}>
             <thead className="text-gray-500 border">
@@ -189,7 +189,7 @@ if(loading){
         </div>
         <div className="col-span-1">
           <h1 className="font-medium text-lg mb-5">Related applications</h1>
-          <div className="mt-7">
+          <div className="mt-7 w-full">
             <div className="flex">
               <div>
                 <img src={m} className="w-8" />
@@ -386,14 +386,14 @@ if(loading){
         </div>
 
         <div className=" col-span-1">
-          <div className="bg-green-800 h-30 w-85 mb-5 rounded-2xl flex px-3 py-2 items-center">
+          <div className="bg-green-800 h-30 w-full mb-5 rounded-2xl flex px-3 py-2 items-center">
             <h1 className="text-xl text-white font-medium ms-5">48%</h1>
             <div className="ms-10">
               <h1 className="text-2xl text-white font-medium">38,556</h1>
               <h1 className="text-white font-medium">Conversions</h1>
             </div>
           </div>
-          <div className="bg-blue-800 h-30 w-85 rounded-lg flex px-3 py-2 items-center">
+          <div className="bg-blue-800 h-30 w-full rounded-lg flex px-3 py-2 items-center">
             <h1 className="text-xl text-white font-medium ms-5">68%</h1>
             <div className="ms-10">
               <h1 className="text-2xl text-white font-medium">78,556</h1>
