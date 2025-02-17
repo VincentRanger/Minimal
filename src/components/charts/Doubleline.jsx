@@ -17,7 +17,7 @@ const Doubleline = () => {
         {month:'Dec',Totalincome:15,TotalExpense:12},
     ]
   return (
-    <LineChart width={750} height={300} data={data}>
+    <LineChart width={650} height={300} data={data}>
 <XAxis dataKey='month'/>
 <YAxis/>
 <Legend/>

@@ -41,14 +41,14 @@ function Booking() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
 
 
   return (
-    <div className='mt-20'>
+    <div className='mt-20 mx-5'>
 <div className='grid grid-cols-3'>
 <div className='col-span-1 p-2'>
 <h1 className='font-semibold text-gray-500'>Total booking</h1>
@@ -60,7 +60,7 @@ function Booking() {
 <h1 className='font-bold text-4xl mt-4'>311k</h1>
 <div className='flex items-center mt-4'><MdKeyboardDoubleArrowUp className='text-green-600' size={20}/><p className='font-semibold'>+0.2%</p></div>
 </div>
-<div className='col-span-1 p-2'>
+<div className='col-span-1 p-2 ms-16'>
 <h1 className='font-semibold text-gray-500'>Canceled</h1>
 <h1 className='font-bold text-4xl mt-4'>124k</h1>
 <div className='flex items-center mt-4'><MdKeyboardDoubleArrowDown className='text-red-600' size={20}/><p className='font-semibold'>-0.1%</p></div>
@@ -125,7 +125,7 @@ function Booking() {
 </div>
 </div>
 </div>
-<div className='col-span-1'>
+<div className='col-span-1 ms-20'>
 <h1 className="font-semibold text-lg mb-6">Tours available</h1>
 <div className='w-50 h-50 mt-20'><CircularProgressbar styles={buildStyles({
   textSize:'16px', pathColor: `rgba(80, 200, 120, ${percentage / 100})`, textColor: '#000000'
@@ -171,7 +171,7 @@ function Booking() {
 <div className='mt-10'>
 <h1 className='font-semibold text-xl'>Newest booking</h1>
 <p className='text-gray-500 text-sm'>8 bookings</p>
-<div className='grid grid-cols-4 mt-10'>
+<div className='grid grid-cols-4 mt-10 gap-7'>
 <div className=' col-span-1'>
   <div className='flex'>
   <img src={s5} className='w-10 rounded-full' alt="" />
@@ -329,19 +329,19 @@ function Booking() {
 <div className='items-center justify-center'>
 <h1 className='font-semibold text-gray-500 text-sm mb-5'>Status</h1>
 <div className='mb-14'>
-<p className='text-red-500 bg-red-300 rounded-lg font-bold w-9'>Paid</p>
+<p className='text-red-500 bg-red-300 px-2 py-1 w-12 font-bold rounded-lg text-sm'>Paid</p>
 </div>
 <div className='mb-12'>
-<p className='text-red-500 bg-red-300 rounded-lg font-bold w-9'>Paid</p>
+<p className='text-red-500 bg-red-300 px-2 py-1 w-12 font-bold rounded-lg text-sm'>Paid</p>
 </div>
 <div className='mb-12'>
-<p className='text-orange-500 bg-orange-300 rounded-lg font-bold w-16'>Pending</p>
+<p className='text-orange-500 bg-orange-300 px-2 py-1 w-17 font-bold rounded-lg text-sm'>Pending</p>
 </div>
 <div className='mb-14'>
-<p className='text-green-500 bg-green-300 rounded-lg font-bold'>Cancelled</p>
+<p className='text-green-500 bg-green-300 px-2 py-1 w-20 font-bold rounded-lg text-sm'>Cancelled</p>
 </div>
 <div className='mb-14'>
-<p className='text-red-500 bg-red-300 rounded-lg font-bold w-9'>Paid</p>
+<p className='text-red-500 bg-red-300 px-2 py-1 w-12 font-bold rounded-lg text-sm'>Paid</p>
 </div>
 </div>
 <div className='text-gray-500'>

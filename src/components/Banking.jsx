@@ -33,7 +33,7 @@ function Banking() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
@@ -42,7 +42,7 @@ function Banking() {
 
 
   return (
-    <div className='mt-20'>
+    <div className='mt-20 mx-5'>
       <div className='grid grid-cols-5'>
         <div className='col-span-3'>
       <div className='justify-between flex'>
@@ -85,7 +85,7 @@ function Banking() {
         </div>
       </div>
       </div>
-      <div className='col-span-2 bg-gray-900 ms-20  p-5 font-bold rounded-xl w-80 h-60'>
+      <div className='col-span-2 bg-gray-900 ms-20 p-5 font-bold rounded-xl w-80 h-60'>
       <CiMenuKebab className=' ms-65 text-gray-500' />
       <p className='text-gray-500 '>Current balance</p>
       <p className='text-white text-2xl mt-2'>$23,432.03</p>
@@ -113,7 +113,7 @@ function Banking() {
         <div className='col-span-1 me-5'>
 <div className='flex justify-between'>
 <h1 className='font-semibold text-xl'>Contacts</h1>
-<button className='font-semibold text-sm'>View all</button>
+<button className='font-semibold text-sm me-10'>View all</button>
 </div>
 <p className='text-gray-500'>You have 122 contacts</p>
 <div className='flex mt-3'>
@@ -160,7 +160,7 @@ function Banking() {
         <p className='text-gray-500 mb-5'>Statistics on balance over time</p>
 <Doublechart/>
         </div>
-       <div className='col-span-1 text-white bg-green-700 w-77 h-82 rounded-2xl mt-2 p-9 pe-5 relative'>
+       <div className='col-span-1 ms-5 text-white bg-green-700 w-77 h-82 rounded-2xl mt-2 p-9 pe-5 relative'>
 <div className='flex justify-between'>
   <div className='font-bold'>
     <h1 className='text-xl'>Invite friends <br /> and earn</h1>

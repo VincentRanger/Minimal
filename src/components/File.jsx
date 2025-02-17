@@ -37,12 +37,12 @@ function File() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
   return (
-    <div className='mt-20'>
+    <div className='mt-20 '>
 <div className='grid grid-cols-3 gap-20 me-10'>
 <div className='col-span-1'>
 <CiMenuKebab className='justify-self-end'/> 

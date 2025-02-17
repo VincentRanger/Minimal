@@ -45,7 +45,7 @@ setLoading(false)
 if(loading){
   return(
     <div className="justify-center items-center mt-60">
-      <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+      <Loader type='spinner-default' size={100} bgColor="gray"/>
     </div>
   )
 }
@@ -155,31 +155,31 @@ if(loading){
                 <td className="py-5">INV-1990</td>
                 <td>Android</td>
                 <td>$83.74</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-lg text-sm">Paid</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1991</td>
                 <td>Mac</td>
                 <td>$97.14</td>
-                <td><p className="bg-red-200 text-red-700 font-bold w-25 ms-10 rounded-md">Out of date</p></td>
+                <td><p className="bg-red-200 text-red-700 font-bold w-25 ms-10 rounded-lg text-sm">Out of date</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1992</td>
                 <td>Windows</td>
                 <td>$68.71</td>
-                <td><p className="bg-yellow-200 text-yellow-600 font-bold w-20 ms-13 rounded-md">Progress</p></td>
+                <td><p className="bg-yellow-200 text-yellow-600 font-bold w-20 ms-13 rounded-lg text-sm">Progress</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1993</td>
                 <td>Android</td>
                 <td>$85.21</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-lg text-sm">Paid</p></td>
               </tr>
               <tr>
                 <td className="py-5">INV-1994</td>
                 <td>Mac</td>
                 <td>$52.17</td>
-                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-md">Paid</p></td>
+                <td><p className="bg-green-200 text-green-700 font-bold w-10 ms-18 rounded-lg text-sm">Paid</p></td>
               </tr>
             </tbody>
           </table>

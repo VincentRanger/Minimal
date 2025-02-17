@@ -41,7 +41,7 @@ const Ecommerce = () => {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
@@ -198,7 +198,7 @@ const Ecommerce = () => {
                   <td>CAP</td>
                   <td><img src={u} className="w-7 rounded-sm ms-14" /></td>
                   <td>$83.74</td>
-                  <td><p className="bg-green-200 text-green-700 font-bold w-11 ms-11 rounded-md">Top 1</p></td>
+                  <td><p className="bg-green-200 text-green-700 font-bold w-11 ms-11 rounded-lg text-sm">Top 1</p></td>
                 </tr>
                 <tr>
                 <td className="py-5"><div className="flex items-center gap-2">
@@ -206,7 +206,7 @@ const Ecommerce = () => {
                   <td>Branded shoes</td>
                   <td><img src={g} className="w-7 rounded-sm ms-14" /></td>
                   <td>$97.14</td>
-                  <td><p className="bg-purple-200 text-purple-700 font-bold w-11 ms-11 rounded-md">Top 2</p></td>
+                  <td><p className="bg-purple-200 text-purple-700 font-bold w-11 ms-11 rounded-lg text-sm">Top 2</p></td>
                 </tr>
                 <tr>
                 <td className="py-5"><div className="flex items-center gap-2">
@@ -214,7 +214,7 @@ const Ecommerce = () => {
                   <td>Headphone</td>
                   <td><img src={f} className="w-7 rounded-sm ms-14" /></td>
                   <td>$68.71	</td>
-                  <td><p className="bg-blue-200 text-blue-700 font-bold w-11 ms-11 rounded-md">Top 3</p></td>
+                  <td><p className="bg-blue-200 text-blue-700 font-bold w-11 ms-11 rounded-lg text-sm">Top 3</p></td>
                 </tr>
                 <tr>
                 <td className="py-5"><div className="flex items-center gap-2">
@@ -222,7 +222,7 @@ const Ecommerce = () => {
                   <td>Cell phone</td>
                   <td><img src={k} className="w-7 rounded-sm ms-14" /></td>
                   <td>$85.21</td>
-                  <td><p className="bg-yellow-200 text-yellow-700 font-bold w-11 ms-11 rounded-md">Top 4</p></td>
+                  <td><p className="bg-yellow-200 text-yellow-700 font-bold w-11 ms-11 rounded-lg text-sm">Top 4</p></td>
                 </tr>
                 <tr>
                 <td className="py-5"><div className="flex items-center gap-2">
@@ -230,7 +230,7 @@ const Ecommerce = () => {
                   <td>Earings</td>
                   <td><img src={e} className="w-7 rounded-sm ms-14" /></td>
                   <td>$52.17</td>
-                  <td><p className="bg-red-200 text-red-700 font-bold w-11 ms-11 rounded-md">Top 5</p></td>
+                  <td><p className="bg-red-200 text-red-700 font-bold w-11 ms-11 rounded-lg text-sm">Top 5</p></td>
                 </tr>
               </tbody>
             </table>

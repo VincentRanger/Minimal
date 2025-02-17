@@ -36,12 +36,12 @@ function Course() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
   return (
-    <div className='mt-20'>
+    <div className='mt-20 px-5'>
 <div className='grid grid-cols-3'>
   <div className='col-span-2'>
   <h1 className="font-bold text-2xl">Hi, {userName}</h1>
@@ -73,8 +73,8 @@ function Course() {
     </div>
   </div>
   </div>
-<div className='col-span-1 justify-center  items-center text-center p-5 mt-13'>
-<img src={pp} className='rounded-full w-20 ms-27 mb-3' alt="" />
+<div className='col-span-1 justify-items-center  items-center text-center p-5 mt-13'>
+<img src={pp} className='rounded-full w-20 mb-3' alt="" />
 <h1 className='font-semibold text-lg mb-1'>{userName}</h1>
 <p className='text-gray-500'>{userRole}</p>
 </div>
@@ -86,17 +86,20 @@ function Course() {
 <Doubleline/>
 </div>
 <div className='col-span-1'>
-<h1 className='font-semibold mb-5 text-xl'>Strength</h1>
+<h1 className='font-semibold mb-5 text-xl ms-5'>Strength</h1>
+<div className='justify-items-end'>
 <Radarchart/>
+</div>
+
 </div>
 </div>
 
-<div className='grid grid-cols-3 gap-7 mt-15'>
-<div className='col-span-1'>
+<div className='grid grid-cols-4 gap-7 mt-15'>
+<div className='col-span-2'>
 <h1 className='font-semibold text-xl ms-10'>Course progress</h1>
 <Piechart/>
 </div>
-<div>
+<div className='col-span-1'>
 <h1 className='font-semibold text-xl mb-7'>Continue Course</h1>
 <div className='mb-8 flex gap-4'>
   <img src={p1} className='w-17 rounded-lg' alt="" />
@@ -147,7 +150,7 @@ function Course() {
 </div>
 </div>
 
-<div>
+<div className='col-span-1'>
 <h1 className='font-semibold text-xl mb-7'>Reminders</h1>
 <div className='mb-8 flex gap-2'>
   <div className='h-5 w-2 mt-1 bg-blue-400 rounded-full'></div>

@@ -39,7 +39,7 @@ function Analytic() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='rectangular-ping' size={500} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="gray"/>
       </div>
     )
   }
@@ -205,13 +205,16 @@ function Analytic() {
   </div>
 </div>
 </div>
-<div className='col-span-2 ms-37'>
-<h1 className='font-semibold text-lg mb-5'>Tasks</h1>
-<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-80'>Prepare Monthly Financial Report</h1><CiMenuKebab /></div>
-<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-80'>Design New Marketing Campaign</h1><CiMenuKebab /></div>
-<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-90'>Analyze Customer Feedback</h1><CiMenuKebab /></div>
-<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-97'>Update Website Content</h1><CiMenuKebab /></div>
-<div className='flex gap-2'><input type='checkbox'/><h1 className='me-95'>Conduct Market Research</h1><CiMenuKebab /></div>
+<div className='col-span-2'>
+<h1 className='font-semibold text-lg mb-5 ms-50'>Tasks</h1>
+<div className='justify-items-end'>
+<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-60'>Prepare Monthly Financial Report</h1><CiMenuKebab /></div>
+<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-59'>Design New Marketing Campaign</h1><CiMenuKebab /></div>
+<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-69'>Analyze Customer Feedback</h1><CiMenuKebab /></div>
+<div className='flex gap-2 mb-7'><input type='checkbox'/><h1 className='me-75'>Update Website Content</h1><CiMenuKebab /></div>
+<div className='flex gap-2'><input type='checkbox'/><h1 className='me-74'>Conduct Market Research</h1><CiMenuKebab /></div>
+</div>
+
 </div>
 
 
