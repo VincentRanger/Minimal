@@ -77,7 +77,8 @@ const Stackedchart = () => {
         },
     ]
   return (
-        <BarChart data={data} width={650} height={350} >
+    // <ResponsiveContainer width='100%' height='100%' >
+      <BarChart data={data} width={650} height={350} >
             <XAxis dataKey="name"/>
             <YAxis/>
             <Tooltip/>
@@ -86,6 +87,7 @@ const Stackedchart = () => {
             <Bar dataKey="Europe" stackId="a" fill='#FFC300 '/>
             <Bar dataKey="Amercias" stackId="a" fill='#9FE2BF'/>
         </BarChart>
+    // </ResponsiveContainer>
   )
 }
 

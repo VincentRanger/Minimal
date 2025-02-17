@@ -1,5 +1,5 @@
 'use client'
-import {BarChart, Bar, Tooltip} from "recharts"
+import {BarChart, Bar, Tooltip,ResponsiveContainer} from "recharts"
 
 const Chart = () => {
     const Bardata=[

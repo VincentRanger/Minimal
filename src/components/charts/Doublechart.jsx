@@ -1,5 +1,5 @@
 import React from 'react'
-import { BarChart,Bar,Legend,Tooltip,XAxis,YAxis } from 'recharts'
+import { BarChart,Bar,Legend,Tooltip,XAxis,YAxis,ResponsiveContainer } from 'recharts'
 
 const Doublechart = () => {
     const data=[{
@@ -49,7 +49,8 @@ const Doublechart = () => {
     },
 ]
   return (
-   <BarChart width={650} height={300} data={data}>
+    // <ResponsiveContainer>
+  <BarChart width={650} height={300} data={data}>
 <XAxis dataKey={"name"}/>
 <YAxis/>
 <Legend/>
@@ -57,6 +58,7 @@ const Doublechart = () => {
 <Bar dataKey={"TeamA"} fill="#FFC300"/>
 <Bar dataKey={"TeamB"} fill="#AFE1AF"/>
    </BarChart>
+    // </ResponsiveContainer>
   )
 }
 
