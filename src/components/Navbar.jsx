@@ -111,7 +111,7 @@ const Navbar = ({ open }) => {
         </div>
         <div className='justify-items-start justify-start px-5 mt-8'>
         <div className='flex gap-2 text-gray-500 font-semibold p-2 hover:bg-gray-300 w-full'><FaHome size={20}/><h1>Home</h1></div>
-        <div className='flex gap-2 text-gray-500 font-semibold p-2 hover:bg-gray-300 w-full'><RiFileUserFill size={20}/><h1>Profile</h1></div>
+        <div className='flex gap-2 text-gray-500 font-semibold p-2 hover:bg-gray-300 w-full' onClick={()=> navigate('profile/user')}><RiFileUserFill size={20}/><h1>Profile</h1></div>
         <div className='flex gap-2 text-gray-500 font-semibold p-2 hover:bg-gray-300 w-full'><MdOutlineSecurity size={20}/><h1>Security</h1></div>
         <div className='flex gap-2 text-gray-500 font-semibold p-2 hover:bg-gray-300 w-full'><IoMdSettings size={20}/><h1>Settings</h1></div>
         </div>
@@ -121,7 +121,7 @@ const Navbar = ({ open }) => {
   ];
 
   return (
-    <nav ref={navbarRef} className={`flex h-15 fixed backdrop-blur-sm items-center mx-6 justify-between duration-500 ${open ? 'inset-x-0 top-0 left-72' : 'inset-x-0 top-0 left-34'}  `}>
+    <nav ref={navbarRef} className={`flex h-15 fixed backdrop-blur-sm items-center mx-6 z-2 justify-between duration-500 ${open ? 'inset-x-0 top-0 left-72' : 'inset-x-0 top-0 left-34'}  `}>
       <div className='flex gap-2'>
         <img src={up} className='w-6 h-6' />
         <p>Team1</p>

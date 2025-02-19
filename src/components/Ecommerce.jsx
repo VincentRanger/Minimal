@@ -25,11 +25,12 @@ import Doubleline from "./charts/Doubleline";
 import ProgressBar from "@ramonak/react-progress-bar";
 import Loader from "react-js-loader";
 import { useState,useEffect } from 'react';
+import { useLocation } from "react-router-dom";
 
-const Ecommerce = () => {
+const Ecommerce = ({open,setOpen}) => {
   const userName= localStorage.getItem("userName")
     const userRole= localStorage.getItem("userRole");
-
+    const location=useLocation()
     const [loading,setLoading]=useState(true)
 
   useEffect(()=>{
@@ -41,7 +42,7 @@ const Ecommerce = () => {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='spinner-default' size={100} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="green"/>
       </div>
     )
   }
@@ -53,8 +54,8 @@ const Ecommerce = () => {
             style={{ backgroundImage: `url(${back4})` }}
           >
             <div className="">
-              <h1 className="font-bold text-2xl">Congratulations</h1>
-              <h1 className="font-bold text-2xl">{userName}</h1>
+              <h1 className="font-bold text-2xl text-white">Congratulations</h1>
+              <h1 className="font-bold text-2xl text-white">{userName}</h1>
               <p className="text-gray-500 text-md mt-5">
               Best seller of the month you have done
                 <br /> 57.6% more sales today.
@@ -72,17 +73,17 @@ const Ecommerce = () => {
             <h1 className="text-gray-400 text-sm font-bold mt-35">
             NEW
             </h1>
-            <h1 className="text-white text-lg font-bold mb-2 mt-2">
+            <h1 className="text-orange-400 text-lg font-bold mb-2 mt-2">
               Urban Explorer Sneakers
             </h1>
-            <button className="rounded-lg bg-green-400 text-white font-bold px-3 py-1 mt-4 hover:bg-green-500 cursor-pointer">
+            <button className="rounded-lg bg-green-400 text-white font-bold px-3 py-1 mt-2 hover:bg-green-500 cursor-pointer">
                 Buy now
               </button>
           </div>
         </div>
         {(userRole==='Admin' &&
            <div className="grid grid-cols-3 gap-5 h-30 mt-10">
-           <div className=" py-2 px-3 flex justify-between items-center">
+           <div className=" py-2 px-3 flex justify-between items-center border">
             <div>
             <h1 className="font-bold mb-3">Product sold</h1>
              <h1 className="font-bold text-3xl mb-3">765</h1>
@@ -95,7 +96,7 @@ const Ecommerce = () => {
               <Linechart/>
               </div>
            </div>
-           <div className="py-2 px-3 justify-between items-center flex">
+           <div className="py-2 px-3 justify-between items-center flex border">
             <div>
             <h1 className="font-bold mb-3">Total balance</h1>
              <h1 className="font-bold text-3xl mb-3">18,765</h1>
@@ -106,7 +107,7 @@ const Ecommerce = () => {
             </div>
             <Linechart2/>
            </div>
-           <div className=" py-2 px-3 flex justify-between items-center">
+           <div className=" py-2 px-3 flex justify-between items-center border">
             <div>
             <h1 className="font-bold mb-3">Sales profit</h1>
              <h1 className="font-bold text-3xl mb-3">4,876</h1>
@@ -181,7 +182,7 @@ const Ecommerce = () => {
         <div className="mt-15 grid grid-cols-4">
           <div className="col-span-3">
             <h1 className="font-medium text-lg mb-5">Best salesman</h1>
-            <table className="text-center w-200">
+            <table className={`text-center ${open ? 'w-[80%]':'w-[100%]'}`}>
               <thead className="text-gray-500">
                 <tr>
                   <th className="px-10 py-3">Seller</th>

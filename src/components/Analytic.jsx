@@ -39,7 +39,7 @@ function Analytic() {
   if(loading){
     return(
       <div className="justify-center items-center mt-60">
-        <Loader type='spinner-default' size={100} bgColor="gray"/>
+        <Loader type='spinner-default' size={100} bgColor="green"/>
       </div>
     )
   }
